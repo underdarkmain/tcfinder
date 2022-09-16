@@ -19,7 +19,7 @@ def tcno(tcno):
         haneOn = (a-b)%10
         #Ilk 9 haneye 10. haneyide ekleyip 10 haneli sayimizi olusturduk.
         onHaneli=str(tcno)+str(haneOn)
-        # Burada for ile bu onHaneli deki 10 haneyi toplayıp toplamOn degiskenine
+        # Burada for ile bu onHaneli deki 10 haneyi toplayÄ±p toplamOn degiskenine
         #atiyoruz.
         toplamOn = 0
         for i in range(10):
@@ -30,10 +30,10 @@ def tcno(tcno):
         #En son olarak ilk 9 hane 10. hane ve 11. haneyi birlestirip cikti veriyoruz
         return tcno+str(haneOn)+str(haneOnBir)
     else:
-        print("Girilen TC No 9 Haneli Olmal�d�r.")
+        print("Girilen TC No 9 Haneli Olmalıdır.")
 
 
 #raw_input ile ilk 9 haneyi kullanicidan aliyoruz.
-tcnumara = input("1 ile Baslayan 9 sayi giriniz (random olabilirkendi tc nizi de deneyebilirsiniz: ")
+tcnumara = input("1 ile Baslayan 9 sayi giriniz (random olabilirkendi tc nizi de deneyebilirsiniz): ")
 #Daha sonra burada tcno() fonk. icine bu numarayi atayip ciktiyi aliyoruz.
-print("TC Kimlik No'nun Tamam� :",tcno(tcnumara))
+print("TC Kimlik No'nun Tamamı :",tcno(tcnumara))
